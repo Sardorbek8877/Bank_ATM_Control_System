@@ -8,6 +8,6 @@ import java.util.List;
 import java.util.UUID;
 
 public interface AtmBillsRepository extends JpaRepository<AtmBills, UUID> {
-    List<AtmBills> findAllByAtmIdAndCurrencyId(UUID atmId,Integer currencyId);
+    List<AtmBills> findAllByAtmIdAndCurrencyId(UUID atmId,UUID currencyId);
 
 }
